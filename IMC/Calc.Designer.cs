@@ -1,6 +1,6 @@
 ﻿namespace IMC
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,32 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuArqui = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFerra = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temaEscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.portuguesPTBRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAjud = new System.Windows.Forms.ToolStripMenuItem();
             this.índiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCalc = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPes = new System.Windows.Forms.NumericUpDown();
             this.txtAlt = new System.Windows.Forms.NumericUpDown();
-            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.portuguesPTBRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAlt)).BeginInit();
@@ -69,7 +78,7 @@
             this.menuAjud});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(399, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(435, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,8 +87,6 @@
             this.menuArqui.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salvarToolStripMenuItem,
             this.toolStripSeparator1,
-            this.imprimirToolStripMenuItem,
-            this.toolStripSeparator2,
             this.sairToolStripMenuItem});
             this.menuArqui.ForeColor = System.Drawing.Color.Black;
             this.menuArqui.Name = "menuArqui";
@@ -92,32 +99,18 @@
             this.salvarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
             this.salvarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(190, 6);
-            // 
-            // imprimirToolStripMenuItem
-            // 
-            this.imprimirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("imprimirToolStripMenuItem.Image")));
-            this.imprimirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.imprimirToolStripMenuItem.Text = "Imprimir";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(190, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -146,22 +139,42 @@
             this.temaEscuroToolStripMenuItem.Checked = true;
             this.temaEscuroToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.temaEscuroToolStripMenuItem.Name = "temaEscuroToolStripMenuItem";
-            this.temaEscuroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.temaEscuroToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.temaEscuroToolStripMenuItem.Text = "Tema Escuro";
             // 
             // temaClaroToolStripMenuItem
             // 
             this.temaClaroToolStripMenuItem.Name = "temaClaroToolStripMenuItem";
-            this.temaClaroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.temaClaroToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.temaClaroToolStripMenuItem.Text = "Tema Claro";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            // 
+            // idiomaToolStripMenuItem
+            // 
+            this.idiomaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.portuguesPTBRToolStripMenuItem});
+            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
+            this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.idiomaToolStripMenuItem.Text = "Idioma";
+            // 
+            // portuguesPTBRToolStripMenuItem
+            // 
+            this.portuguesPTBRToolStripMenuItem.Checked = true;
+            this.portuguesPTBRToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.portuguesPTBRToolStripMenuItem.Name = "portuguesPTBRToolStripMenuItem";
+            this.portuguesPTBRToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.portuguesPTBRToolStripMenuItem.Text = "Portugues PT/BR";
             // 
             // menuAjud
             // 
             this.menuAjud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.índiceToolStripMenuItem,
-            this.pesquisarToolStripMenuItem,
             this.toolStripSeparator5,
-            this.sobreToolStripMenuItem});
+            this.pesquisarToolStripMenuItem});
             this.menuAjud.ForeColor = System.Drawing.Color.Black;
             this.menuAjud.Name = "menuAjud";
             this.menuAjud.Size = new System.Drawing.Size(59, 20);
@@ -170,27 +183,21 @@
             // índiceToolStripMenuItem
             // 
             this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.índiceToolStripMenuItem.Text = "Oque é IMC ?";
             this.índiceToolStripMenuItem.Click += new System.EventHandler(this.índiceToolStripMenuItem_Click);
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pesquisarToolStripMenuItem.Text = "Como funciona";
             this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(175, 6);
-            // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.sobreToolStripMenuItem.Text = "Sobre...";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // label1
             // 
@@ -275,35 +282,148 @@
             this.txtAlt.Size = new System.Drawing.Size(89, 20);
             this.txtAlt.TabIndex = 8;
             // 
-            // idiomaToolStripMenuItem
+            // label4
             // 
-            this.idiomaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.portuguesPTBRToolStripMenuItem});
-            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
-            this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.idiomaToolStripMenuItem.Text = "Idioma";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("MS Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.Location = new System.Drawing.Point(188, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "IMC: ";
             // 
-            // portuguesPTBRToolStripMenuItem
+            // label5
             // 
-            this.portuguesPTBRToolStripMenuItem.Checked = true;
-            this.portuguesPTBRToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.portuguesPTBRToolStripMenuItem.Name = "portuguesPTBRToolStripMenuItem";
-            this.portuguesPTBRToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.portuguesPTBRToolStripMenuItem.Text = "Portugues PT/BR";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label5.Location = new System.Drawing.Point(280, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 15);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Classificação: ";
             // 
-            // toolStripSeparator3
+            // label6
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(189, 177);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 12);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "MENOR QUE 18,5";
             // 
-            // Form1
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(349, 177);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 12);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "\tMAGREZA";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(189, 198);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(107, 12);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "ENTRE 18,5 E 24,9";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(355, 198);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(41, 12);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "NORMAL";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(189, 222);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 12);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "ENTRE 25,0 E 29,9";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(337, 222);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(59, 12);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "SOBREPESO";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(189, 246);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(107, 12);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "ENTRE 30,0 E 39,9";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(337, 246);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(59, 12);
+            this.label13.TabIndex = 18;
+            this.label13.Text = "OBESIDADE";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(189, 267);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 12);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "MAIOR QUE 40,0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(301, 267);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(95, 12);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "OBESIDADE GRAVE\t";
+            // 
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(399, 352);
+            this.ClientSize = new System.Drawing.Size(435, 362);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAlt);
             this.Controls.Add(this.txtPes);
             this.Controls.Add(this.label3);
@@ -312,12 +432,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "Calculator";
             this.Opacity = 0.95D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "IMC - Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -334,8 +455,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuArqui;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuFerra;
         private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
@@ -343,7 +462,6 @@
         private System.Windows.Forms.ToolStripMenuItem índiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCalc;
@@ -355,6 +473,18 @@
         private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem portuguesPTBRToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 

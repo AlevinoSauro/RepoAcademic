@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IMC
 {
-    public partial class Form1 : Form
+    public partial class Calculator : Form
     {
-        public Form1()
+        public Calculator()
         {
             InitializeComponent();
         }
@@ -48,10 +48,9 @@ namespace IMC
             varPes = Convert.ToDouble(txtPes.Text);
             calculo = varPes / (varAlt*varAlt);
 
-
             MessageBox.Show("O seu IMC é " + calculo.ToString() , "Resultado");
+
         }
 
- 
     }
 }
