@@ -30,32 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.menuArqui = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuFerra = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaEscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAjud = new System.Windows.Forms.ToolStripMenuItem();
             this.índiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalc = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.temaEscuroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.temaClaroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtPes = new System.Windows.Forms.NumericUpDown();
+            this.txtAlt = new System.Windows.Forms.NumericUpDown();
             this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.portuguesPTBRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAlt)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -63,33 +64,27 @@
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Font = new System.Drawing.Font("MS Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.arquivoToolStripMenuItem,
-            this.ferramentasToolStripMenuItem,
-            this.ajudaToolStripMenuItem});
+            this.menuArqui,
+            this.menuFerra,
+            this.menuAjud});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(399, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // arquivoToolStripMenuItem
+            // menuArqui
             // 
-            this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator,
+            this.menuArqui.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salvarToolStripMenuItem,
             this.toolStripSeparator1,
             this.imprimirToolStripMenuItem,
             this.toolStripSeparator2,
             this.sairToolStripMenuItem});
-            this.arquivoToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.arquivoToolStripMenuItem.Text = "Arquivo";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(190, 6);
+            this.menuArqui.ForeColor = System.Drawing.Color.Black;
+            this.menuArqui.Name = "menuArqui";
+            this.menuArqui.Size = new System.Drawing.Size(75, 20);
+            this.menuArqui.Text = "Arquivo";
             // 
             // salvarToolStripMenuItem
             // 
@@ -124,16 +119,18 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // ferramentasToolStripMenuItem
+            // menuFerra
             // 
-            this.ferramentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuFerra.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.personalizarToolStripMenuItem,
-            this.opçõesToolStripMenuItem});
-            this.ferramentasToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
-            this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
-            this.ferramentasToolStripMenuItem.Text = "Ferramentas";
+            this.toolStripSeparator3,
+            this.idiomaToolStripMenuItem});
+            this.menuFerra.ForeColor = System.Drawing.Color.Black;
+            this.menuFerra.Name = "menuFerra";
+            this.menuFerra.Size = new System.Drawing.Size(67, 20);
+            this.menuFerra.Text = "Opções";
             // 
             // personalizarToolStripMenuItem
             // 
@@ -144,47 +141,55 @@
             this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personalizarToolStripMenuItem.Text = "Personalizar";
             // 
-            // opçõesToolStripMenuItem
+            // temaEscuroToolStripMenuItem
             // 
-            this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.idiomaToolStripMenuItem});
-            this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.opçõesToolStripMenuItem.Text = "Opções";
+            this.temaEscuroToolStripMenuItem.Checked = true;
+            this.temaEscuroToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.temaEscuroToolStripMenuItem.Name = "temaEscuroToolStripMenuItem";
+            this.temaEscuroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.temaEscuroToolStripMenuItem.Text = "Tema Escuro";
             // 
-            // ajudaToolStripMenuItem
+            // temaClaroToolStripMenuItem
             // 
-            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.temaClaroToolStripMenuItem.Name = "temaClaroToolStripMenuItem";
+            this.temaClaroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.temaClaroToolStripMenuItem.Text = "Tema Claro";
+            // 
+            // menuAjud
+            // 
+            this.menuAjud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.índiceToolStripMenuItem,
             this.pesquisarToolStripMenuItem,
             this.toolStripSeparator5,
             this.sobreToolStripMenuItem});
-            this.ajudaToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.ajudaToolStripMenuItem.Text = "Ajuda";
+            this.menuAjud.ForeColor = System.Drawing.Color.Black;
+            this.menuAjud.Name = "menuAjud";
+            this.menuAjud.Size = new System.Drawing.Size(59, 20);
+            this.menuAjud.Text = "Ajuda";
             // 
             // índiceToolStripMenuItem
             // 
             this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.índiceToolStripMenuItem.Text = "Oque é IMC ?";
+            this.índiceToolStripMenuItem.Click += new System.EventHandler(this.índiceToolStripMenuItem_Click);
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.pesquisarToolStripMenuItem.Text = "Como funciona";
+            this.pesquisarToolStripMenuItem.Click += new System.EventHandler(this.pesquisarToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(175, 6);
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.sobreToolStripMenuItem.Text = "Sobre...";
             // 
             // label1
@@ -209,53 +214,66 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Altura: ";
             // 
-            // textBox1
+            // btnCalc
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(39, 215);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(16, 276);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Calcular";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalc.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalc.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnCalc.Location = new System.Drawing.Point(16, 292);
+            this.btnCalc.Name = "btnCalc";
+            this.btnCalc.Size = new System.Drawing.Size(92, 29);
+            this.btnCalc.TabIndex = 5;
+            this.btnCalc.Text = "Calcular";
+            this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label3.Location = new System.Drawing.Point(12, 45);
+            this.label3.Location = new System.Drawing.Point(12, 42);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(340, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "IMC - Índice de Massa Corporal";
             // 
-            // temaEscuroToolStripMenuItem
+            // txtPes
             // 
-            this.temaEscuroToolStripMenuItem.Name = "temaEscuroToolStripMenuItem";
-            this.temaEscuroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.temaEscuroToolStripMenuItem.Text = "Tema Escuro";
+            this.txtPes.DecimalPlaces = 1;
+            this.txtPes.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.txtPes.Location = new System.Drawing.Point(39, 215);
+            this.txtPes.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.txtPes.Name = "txtPes";
+            this.txtPes.Size = new System.Drawing.Size(89, 20);
+            this.txtPes.TabIndex = 7;
             // 
-            // temaClaroToolStripMenuItem
+            // txtAlt
             // 
-            this.temaClaroToolStripMenuItem.Name = "temaClaroToolStripMenuItem";
-            this.temaClaroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.temaClaroToolStripMenuItem.Text = "Tema Claro";
+            this.txtAlt.DecimalPlaces = 2;
+            this.txtAlt.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.txtAlt.Location = new System.Drawing.Point(39, 138);
+            this.txtAlt.Maximum = new decimal(new int[] {
+            400,
+            0,
+            0,
+            131072});
+            this.txtAlt.Name = "txtAlt";
+            this.txtAlt.Size = new System.Drawing.Size(89, 20);
+            this.txtAlt.TabIndex = 8;
             // 
             // idiomaToolStripMenuItem
             // 
@@ -270,8 +288,13 @@
             this.portuguesPTBRToolStripMenuItem.Checked = true;
             this.portuguesPTBRToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.portuguesPTBRToolStripMenuItem.Name = "portuguesPTBRToolStripMenuItem";
-            this.portuguesPTBRToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.portuguesPTBRToolStripMenuItem.Text = "Portugues - PT/BR";
+            this.portuguesPTBRToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.portuguesPTBRToolStripMenuItem.Text = "Portugues PT/BR";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // Form1
             // 
@@ -281,23 +304,25 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(399, 352);
+            this.Controls.Add(this.txtAlt);
+            this.Controls.Add(this.txtPes);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Opacity = 0.99D;
+            this.Opacity = 0.95D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAlt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,31 +331,30 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem arquivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem menuArqui;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuFerra;
         private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuAjud;
         private System.Windows.Forms.ToolStripMenuItem índiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem temaEscuroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem temaClaroToolStripMenuItem;
+        private System.Windows.Forms.NumericUpDown txtPes;
+        private System.Windows.Forms.NumericUpDown txtAlt;
         private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem portuguesPTBRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
 
