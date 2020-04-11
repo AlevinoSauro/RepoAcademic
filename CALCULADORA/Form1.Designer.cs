@@ -37,21 +37,21 @@
             System.Windows.Forms.Button button7;
             System.Windows.Forms.Button button8;
             System.Windows.Forms.Button button9;
-            System.Windows.Forms.Button button10;
-            System.Windows.Forms.Button button11;
-            System.Windows.Forms.Button button12;
-            System.Windows.Forms.Button button13;
-            System.Windows.Forms.Button button14;
-            System.Windows.Forms.Button button15;
-            System.Windows.Forms.Button button16;
-            System.Windows.Forms.Button button17;
-            System.Windows.Forms.Button button18;
-            System.Windows.Forms.Button button19;
-            System.Windows.Forms.Button button20;
+            System.Windows.Forms.Button button0;
+            System.Windows.Forms.Button virgula;
+            System.Windows.Forms.Button multiplicacao;
+            System.Windows.Forms.Button subtracao;
+            System.Windows.Forms.Button adicao;
+            System.Windows.Forms.Button igual;
+            System.Windows.Forms.Button clear;
+            System.Windows.Forms.Button clearEX;
+            System.Windows.Forms.Button porcentagem;
+            System.Windows.Forms.Button divisao;
+            System.Windows.Forms.Button MaisMenos;
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBox = new System.Windows.Forms.TextBox();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
@@ -61,17 +61,17 @@
             button7 = new System.Windows.Forms.Button();
             button8 = new System.Windows.Forms.Button();
             button9 = new System.Windows.Forms.Button();
-            button10 = new System.Windows.Forms.Button();
-            button11 = new System.Windows.Forms.Button();
-            button12 = new System.Windows.Forms.Button();
-            button13 = new System.Windows.Forms.Button();
-            button14 = new System.Windows.Forms.Button();
-            button15 = new System.Windows.Forms.Button();
-            button16 = new System.Windows.Forms.Button();
-            button17 = new System.Windows.Forms.Button();
-            button18 = new System.Windows.Forms.Button();
-            button19 = new System.Windows.Forms.Button();
-            button20 = new System.Windows.Forms.Button();
+            button0 = new System.Windows.Forms.Button();
+            virgula = new System.Windows.Forms.Button();
+            multiplicacao = new System.Windows.Forms.Button();
+            subtracao = new System.Windows.Forms.Button();
+            adicao = new System.Windows.Forms.Button();
+            igual = new System.Windows.Forms.Button();
+            clear = new System.Windows.Forms.Button();
+            clearEX = new System.Windows.Forms.Button();
+            porcentagem = new System.Windows.Forms.Button();
+            divisao = new System.Windows.Forms.Button();
+            MaisMenos = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -230,181 +230,182 @@
             button9.Text = "9";
             button9.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // button0
             // 
-            button10.BackColor = System.Drawing.Color.Transparent;
-            button10.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button10.FlatAppearance.BorderSize = 0;
-            button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button10.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button10.Location = new System.Drawing.Point(66, 162);
-            button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(59, 47);
-            button10.TabIndex = 9;
-            button10.Text = "0";
-            button10.UseVisualStyleBackColor = false;
+            button0.BackColor = System.Drawing.Color.Transparent;
+            button0.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            button0.FlatAppearance.BorderSize = 0;
+            button0.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            button0.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            button0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button0.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button0.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            button0.Location = new System.Drawing.Point(66, 162);
+            button0.Name = "button0";
+            button0.Size = new System.Drawing.Size(59, 47);
+            button0.TabIndex = 9;
+            button0.Text = "0";
+            button0.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // virgula
             // 
-            button11.BackColor = System.Drawing.Color.Transparent;
-            button11.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button11.FlatAppearance.BorderSize = 0;
-            button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button11.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button11.Location = new System.Drawing.Point(131, 162);
-            button11.Name = "button11";
-            button11.Size = new System.Drawing.Size(57, 47);
-            button11.TabIndex = 10;
-            button11.Text = ",";
-            button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            button11.UseVisualStyleBackColor = false;
+            virgula.BackColor = System.Drawing.Color.Transparent;
+            virgula.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            virgula.FlatAppearance.BorderSize = 0;
+            virgula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            virgula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            virgula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            virgula.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            virgula.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            virgula.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            virgula.Location = new System.Drawing.Point(131, 162);
+            virgula.Name = "virgula";
+            virgula.Size = new System.Drawing.Size(57, 47);
+            virgula.TabIndex = 10;
+            virgula.Text = ",";
+            virgula.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            virgula.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // multiplicacao
             // 
-            button12.BackColor = System.Drawing.Color.Transparent;
-            button12.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button12.FlatAppearance.BorderSize = 0;
-            button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button12.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button12.Location = new System.Drawing.Point(3, 3);
-            button12.Name = "button12";
-            button12.Size = new System.Drawing.Size(56, 48);
-            button12.TabIndex = 11;
-            button12.Text = "*";
-            button12.UseVisualStyleBackColor = false;
+            multiplicacao.BackColor = System.Drawing.Color.Transparent;
+            multiplicacao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            multiplicacao.FlatAppearance.BorderSize = 0;
+            multiplicacao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            multiplicacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            multiplicacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            multiplicacao.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            multiplicacao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            multiplicacao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            multiplicacao.Location = new System.Drawing.Point(3, 3);
+            multiplicacao.Name = "multiplicacao";
+            multiplicacao.Size = new System.Drawing.Size(56, 48);
+            multiplicacao.TabIndex = 11;
+            multiplicacao.Text = "*";
+            multiplicacao.UseVisualStyleBackColor = false;
             // 
-            // button13
+            // subtracao
             // 
-            button13.BackColor = System.Drawing.Color.Transparent;
-            button13.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button13.FlatAppearance.BorderSize = 0;
-            button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button13.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button13.Location = new System.Drawing.Point(3, 57);
-            button13.Name = "button13";
-            button13.Size = new System.Drawing.Size(56, 48);
-            button13.TabIndex = 12;
-            button13.Text = "-";
-            button13.UseVisualStyleBackColor = false;
+            subtracao.BackColor = System.Drawing.Color.Transparent;
+            subtracao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            subtracao.FlatAppearance.BorderSize = 0;
+            subtracao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            subtracao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            subtracao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            subtracao.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            subtracao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            subtracao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            subtracao.Location = new System.Drawing.Point(3, 57);
+            subtracao.Name = "subtracao";
+            subtracao.Size = new System.Drawing.Size(56, 48);
+            subtracao.TabIndex = 12;
+            subtracao.Text = "-";
+            subtracao.UseVisualStyleBackColor = false;
             // 
-            // button14
+            // adicao
             // 
-            button14.BackColor = System.Drawing.Color.Transparent;
-            button14.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button14.FlatAppearance.BorderSize = 0;
-            button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button14.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button14.Location = new System.Drawing.Point(3, 111);
-            button14.Name = "button14";
-            button14.Size = new System.Drawing.Size(56, 48);
-            button14.TabIndex = 13;
-            button14.Text = "+";
-            button14.UseVisualStyleBackColor = false;
+            adicao.BackColor = System.Drawing.Color.Transparent;
+            adicao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            adicao.FlatAppearance.BorderSize = 0;
+            adicao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            adicao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            adicao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            adicao.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            adicao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            adicao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            adicao.Location = new System.Drawing.Point(3, 111);
+            adicao.Name = "adicao";
+            adicao.Size = new System.Drawing.Size(56, 48);
+            adicao.TabIndex = 13;
+            adicao.Text = "+";
+            adicao.UseVisualStyleBackColor = false;
             // 
-            // button15
+            // igual
             // 
-            button15.BackColor = System.Drawing.Color.Transparent;
-            button15.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button15.FlatAppearance.BorderSize = 0;
-            button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button15.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button15.Location = new System.Drawing.Point(3, 165);
-            button15.Name = "button15";
-            button15.Size = new System.Drawing.Size(56, 48);
-            button15.TabIndex = 14;
-            button15.Text = "=";
-            button15.UseVisualStyleBackColor = false;
+            igual.BackColor = System.Drawing.Color.Transparent;
+            igual.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            igual.FlatAppearance.BorderSize = 0;
+            igual.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            igual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            igual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            igual.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            igual.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            igual.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            igual.Location = new System.Drawing.Point(3, 165);
+            igual.Name = "igual";
+            igual.Size = new System.Drawing.Size(56, 48);
+            igual.TabIndex = 14;
+            igual.Text = "=";
+            igual.UseVisualStyleBackColor = false;
             // 
-            // button16
+            // clear
             // 
-            button16.BackColor = System.Drawing.Color.Transparent;
-            button16.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button16.FlatAppearance.BorderSize = 0;
-            button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button16.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button16.Location = new System.Drawing.Point(68, 3);
-            button16.Name = "button16";
-            button16.Size = new System.Drawing.Size(59, 43);
-            button16.TabIndex = 11;
-            button16.Text = "C";
-            button16.UseVisualStyleBackColor = false;
+            clear.BackColor = System.Drawing.Color.Transparent;
+            clear.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            clear.FlatAppearance.BorderSize = 0;
+            clear.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            clear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            clear.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            clear.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            clear.Location = new System.Drawing.Point(68, 3);
+            clear.Name = "clear";
+            clear.Size = new System.Drawing.Size(59, 43);
+            clear.TabIndex = 11;
+            clear.Text = "C";
+            clear.UseVisualStyleBackColor = false;
+            clear.Click += new System.EventHandler(this.button16_Click);
             // 
-            // button17
+            // clearEX
             // 
-            button17.BackColor = System.Drawing.Color.Transparent;
-            button17.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button17.FlatAppearance.BorderSize = 0;
-            button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button17.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button17.Location = new System.Drawing.Point(133, 3);
-            button17.Name = "button17";
-            button17.Size = new System.Drawing.Size(59, 43);
-            button17.TabIndex = 12;
-            button17.Text = "CE";
-            button17.UseVisualStyleBackColor = false;
+            clearEX.BackColor = System.Drawing.Color.Transparent;
+            clearEX.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            clearEX.FlatAppearance.BorderSize = 0;
+            clearEX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            clearEX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            clearEX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            clearEX.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            clearEX.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            clearEX.Location = new System.Drawing.Point(133, 3);
+            clearEX.Name = "clearEX";
+            clearEX.Size = new System.Drawing.Size(59, 43);
+            clearEX.TabIndex = 12;
+            clearEX.Text = "CE";
+            clearEX.UseVisualStyleBackColor = false;
             // 
-            // button18
+            // porcentagem
             // 
-            button18.BackColor = System.Drawing.Color.Transparent;
-            button18.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button18.FlatAppearance.BorderSize = 0;
-            button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button18.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button18.Location = new System.Drawing.Point(3, 3);
-            button18.Name = "button18";
-            button18.Size = new System.Drawing.Size(59, 43);
-            button18.TabIndex = 13;
-            button18.Text = "%";
-            button18.UseVisualStyleBackColor = false;
+            porcentagem.BackColor = System.Drawing.Color.Transparent;
+            porcentagem.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            porcentagem.FlatAppearance.BorderSize = 0;
+            porcentagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            porcentagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            porcentagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            porcentagem.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            porcentagem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            porcentagem.Location = new System.Drawing.Point(3, 3);
+            porcentagem.Name = "porcentagem";
+            porcentagem.Size = new System.Drawing.Size(59, 43);
+            porcentagem.TabIndex = 13;
+            porcentagem.Text = "%";
+            porcentagem.UseVisualStyleBackColor = false;
             // 
-            // button19
+            // divisao
             // 
-            button19.BackColor = System.Drawing.Color.Transparent;
-            button19.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button19.FlatAppearance.BorderSize = 0;
-            button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button19.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button19.Location = new System.Drawing.Point(198, 3);
-            button19.Name = "button19";
-            button19.Size = new System.Drawing.Size(59, 43);
-            button19.TabIndex = 14;
-            button19.Text = "/";
-            button19.UseVisualStyleBackColor = false;
+            divisao.BackColor = System.Drawing.Color.Transparent;
+            divisao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            divisao.FlatAppearance.BorderSize = 0;
+            divisao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            divisao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            divisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            divisao.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            divisao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            divisao.Location = new System.Drawing.Point(198, 3);
+            divisao.Name = "divisao";
+            divisao.Size = new System.Drawing.Size(59, 43);
+            divisao.TabIndex = 14;
+            divisao.Text = "/";
+            divisao.UseVisualStyleBackColor = false;
             // 
             // flowLayoutPanel1
             // 
@@ -417,65 +418,66 @@
             this.flowLayoutPanel1.Controls.Add(button1);
             this.flowLayoutPanel1.Controls.Add(button2);
             this.flowLayoutPanel1.Controls.Add(button3);
-            this.flowLayoutPanel1.Controls.Add(button20);
-            this.flowLayoutPanel1.Controls.Add(button10);
-            this.flowLayoutPanel1.Controls.Add(button11);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 162);
+            this.flowLayoutPanel1.Controls.Add(MaisMenos);
+            this.flowLayoutPanel1.Controls.Add(button0);
+            this.flowLayoutPanel1.Controls.Add(virgula);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 158);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 221);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(button12);
-            this.flowLayoutPanel2.Controls.Add(button13);
-            this.flowLayoutPanel2.Controls.Add(button14);
-            this.flowLayoutPanel2.Controls.Add(button15);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(207, 162);
+            this.flowLayoutPanel2.Controls.Add(multiplicacao);
+            this.flowLayoutPanel2.Controls.Add(subtracao);
+            this.flowLayoutPanel2.Controls.Add(adicao);
+            this.flowLayoutPanel2.Controls.Add(igual);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(205, 158);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 221);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Controls.Add(button18);
-            this.flowLayoutPanel3.Controls.Add(button16);
-            this.flowLayoutPanel3.Controls.Add(button17);
-            this.flowLayoutPanel3.Controls.Add(button19);
+            this.flowLayoutPanel3.Controls.Add(porcentagem);
+            this.flowLayoutPanel3.Controls.Add(clear);
+            this.flowLayoutPanel3.Controls.Add(clearEX);
+            this.flowLayoutPanel3.Controls.Add(divisao);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(7, 103);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(265, 53);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(263, 53);
             this.flowLayoutPanel3.TabIndex = 2;
             // 
-            // textBox1
+            // txtBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(10, 28);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 56);
-            this.textBox1.TabIndex = 3;
+            this.txtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.txtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBox.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox.ForeColor = System.Drawing.SystemColors.Info;
+            this.txtBox.Location = new System.Drawing.Point(10, 28);
+            this.txtBox.MaxLength = 64;
+            this.txtBox.Multiline = true;
+            this.txtBox.Name = "txtBox";
+            this.txtBox.Size = new System.Drawing.Size(256, 56);
+            this.txtBox.TabIndex = 4;
+            this.txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button20
+            // MaisMenos
             // 
-            button20.BackColor = System.Drawing.Color.Transparent;
-            button20.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            button20.FlatAppearance.BorderSize = 0;
-            button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button20.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button20.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button20.Location = new System.Drawing.Point(3, 162);
-            button20.Name = "button20";
-            button20.Size = new System.Drawing.Size(57, 47);
-            button20.TabIndex = 11;
-            button20.Text = "+/-";
-            button20.UseVisualStyleBackColor = false;
+            MaisMenos.BackColor = System.Drawing.Color.Transparent;
+            MaisMenos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            MaisMenos.FlatAppearance.BorderSize = 0;
+            MaisMenos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            MaisMenos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            MaisMenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            MaisMenos.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            MaisMenos.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            MaisMenos.Location = new System.Drawing.Point(3, 162);
+            MaisMenos.Name = "MaisMenos";
+            MaisMenos.Size = new System.Drawing.Size(57, 47);
+            MaisMenos.TabIndex = 11;
+            MaisMenos.Text = "+/-";
+            MaisMenos.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -483,15 +485,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(284, 391);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(278, 385);
+            this.Controls.Add(this.txtBox);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";
             this.Opacity = 0.9D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
@@ -505,7 +507,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBox;
     }
 }
 

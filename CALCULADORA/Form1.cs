@@ -16,5 +16,10 @@ namespace CALCULADORA
         {
             InitializeComponent();
         }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+                
+        }
     }
 }
