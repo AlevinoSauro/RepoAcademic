@@ -1,6 +1,6 @@
 ﻿namespace CALCULADORA
 {
-    partial class Form1
+    partial class Calc
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -93,6 +93,7 @@
             button1.TabIndex = 0;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -110,6 +111,7 @@
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -127,6 +129,7 @@
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -144,6 +147,7 @@
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -161,6 +165,7 @@
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -178,6 +183,7 @@
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -195,6 +201,7 @@
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -212,6 +219,7 @@
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -229,6 +237,7 @@
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button0
             // 
@@ -372,6 +381,7 @@
             clearEX.TabIndex = 12;
             clearEX.Text = "CE";
             clearEX.UseVisualStyleBackColor = false;
+            clearEX.Click += new System.EventHandler(this.clearEX_Click);
             // 
             // porcentagem
             // 
@@ -423,7 +433,7 @@
             this.flowLayoutPanel1.Controls.Add(virgula);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 158);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 221);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 215);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
@@ -434,7 +444,7 @@
             this.flowLayoutPanel2.Controls.Add(igual);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(205, 158);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 221);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 215);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // flowLayoutPanel3
@@ -452,15 +462,17 @@
             // 
             this.txtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.txtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBox.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtBox.Location = new System.Drawing.Point(10, 28);
+            this.txtBox.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.txtBox.Location = new System.Drawing.Point(10, 31);
             this.txtBox.MaxLength = 64;
             this.txtBox.Multiline = true;
             this.txtBox.Name = "txtBox";
-            this.txtBox.Size = new System.Drawing.Size(256, 56);
+            this.txtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBox.Size = new System.Drawing.Size(254, 50);
             this.txtBox.TabIndex = 4;
-            this.txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtBox.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
             // 
             // MaisMenos
             // 
@@ -479,18 +491,19 @@
             MaisMenos.Text = "+/-";
             MaisMenos.UseVisualStyleBackColor = false;
             // 
-            // Form1
+            // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(278, 385);
+            this.ClientSize = new System.Drawing.Size(278, 379);
             this.Controls.Add(this.txtBox);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Name = "Form1";
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Name = "Calc";
             this.Opacity = 0.9D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Calculadora";
