@@ -47,9 +47,11 @@
             System.Windows.Forms.Button button17;
             System.Windows.Forms.Button button18;
             System.Windows.Forms.Button button19;
+            System.Windows.Forms.Button button20;
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
             button3 = new System.Windows.Forms.Button();
@@ -69,28 +71,11 @@
             button17 = new System.Windows.Forms.Button();
             button18 = new System.Windows.Forms.Button();
             button19 = new System.Windows.Forms.Button();
+            button20 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(button7);
-            this.flowLayoutPanel1.Controls.Add(button8);
-            this.flowLayoutPanel1.Controls.Add(button9);
-            this.flowLayoutPanel1.Controls.Add(button4);
-            this.flowLayoutPanel1.Controls.Add(button5);
-            this.flowLayoutPanel1.Controls.Add(button6);
-            this.flowLayoutPanel1.Controls.Add(button1);
-            this.flowLayoutPanel1.Controls.Add(button2);
-            this.flowLayoutPanel1.Controls.Add(button3);
-            this.flowLayoutPanel1.Controls.Add(button10);
-            this.flowLayoutPanel1.Controls.Add(button11);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(8, 202);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(223, 256);
-            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // button1
             // 
@@ -102,9 +87,9 @@
             button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button1.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button1.Location = new System.Drawing.Point(3, 131);
+            button1.Location = new System.Drawing.Point(3, 109);
             button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(68, 58);
+            button1.Size = new System.Drawing.Size(57, 47);
             button1.TabIndex = 0;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = false;
@@ -119,9 +104,9 @@
             button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button2.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button2.Location = new System.Drawing.Point(77, 131);
+            button2.Location = new System.Drawing.Point(66, 109);
             button2.Name = "button2";
-            button2.Size = new System.Drawing.Size(68, 58);
+            button2.Size = new System.Drawing.Size(57, 47);
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = false;
@@ -136,9 +121,9 @@
             button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button3.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button3.Location = new System.Drawing.Point(151, 131);
+            button3.Location = new System.Drawing.Point(129, 109);
             button3.Name = "button3";
-            button3.Size = new System.Drawing.Size(68, 58);
+            button3.Size = new System.Drawing.Size(57, 47);
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = false;
@@ -153,9 +138,9 @@
             button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button4.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button4.Location = new System.Drawing.Point(3, 67);
+            button4.Location = new System.Drawing.Point(3, 56);
             button4.Name = "button4";
-            button4.Size = new System.Drawing.Size(68, 58);
+            button4.Size = new System.Drawing.Size(57, 47);
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = false;
@@ -170,9 +155,9 @@
             button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button5.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button5.Location = new System.Drawing.Point(77, 67);
+            button5.Location = new System.Drawing.Point(66, 56);
             button5.Name = "button5";
-            button5.Size = new System.Drawing.Size(68, 58);
+            button5.Size = new System.Drawing.Size(57, 47);
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = false;
@@ -187,9 +172,9 @@
             button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button6.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button6.Location = new System.Drawing.Point(151, 67);
+            button6.Location = new System.Drawing.Point(129, 56);
             button6.Name = "button6";
-            button6.Size = new System.Drawing.Size(68, 58);
+            button6.Size = new System.Drawing.Size(57, 47);
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = false;
@@ -206,7 +191,7 @@
             button7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             button7.Location = new System.Drawing.Point(3, 3);
             button7.Name = "button7";
-            button7.Size = new System.Drawing.Size(68, 58);
+            button7.Size = new System.Drawing.Size(57, 47);
             button7.TabIndex = 6;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = false;
@@ -221,9 +206,9 @@
             button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button8.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button8.Location = new System.Drawing.Point(77, 3);
+            button8.Location = new System.Drawing.Point(66, 3);
             button8.Name = "button8";
-            button8.Size = new System.Drawing.Size(68, 58);
+            button8.Size = new System.Drawing.Size(57, 47);
             button8.TabIndex = 7;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = false;
@@ -238,9 +223,9 @@
             button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button9.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button9.Location = new System.Drawing.Point(151, 3);
+            button9.Location = new System.Drawing.Point(129, 3);
             button9.Name = "button9";
-            button9.Size = new System.Drawing.Size(68, 58);
+            button9.Size = new System.Drawing.Size(57, 47);
             button9.TabIndex = 8;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = false;
@@ -255,9 +240,9 @@
             button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button10.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button10.Location = new System.Drawing.Point(3, 195);
+            button10.Location = new System.Drawing.Point(66, 162);
             button10.Name = "button10";
-            button10.Size = new System.Drawing.Size(142, 58);
+            button10.Size = new System.Drawing.Size(59, 47);
             button10.TabIndex = 9;
             button10.Text = "0";
             button10.UseVisualStyleBackColor = false;
@@ -273,24 +258,13 @@
             button11.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button11.ForeColor = System.Drawing.SystemColors.ButtonFace;
             button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button11.Location = new System.Drawing.Point(151, 195);
+            button11.Location = new System.Drawing.Point(131, 162);
             button11.Name = "button11";
-            button11.Size = new System.Drawing.Size(68, 58);
+            button11.Size = new System.Drawing.Size(57, 47);
             button11.TabIndex = 10;
             button11.Text = ",";
             button11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             button11.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(button12);
-            this.flowLayoutPanel2.Controls.Add(button13);
-            this.flowLayoutPanel2.Controls.Add(button14);
-            this.flowLayoutPanel2.Controls.Add(button15);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(233, 202);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(78, 256);
-            this.flowLayoutPanel2.TabIndex = 1;
             // 
             // button12
             // 
@@ -300,12 +274,12 @@
             button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button12.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button12.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button12.ForeColor = System.Drawing.SystemColors.ButtonFace;
             button12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             button12.Location = new System.Drawing.Point(3, 3);
             button12.Name = "button12";
-            button12.Size = new System.Drawing.Size(68, 58);
+            button12.Size = new System.Drawing.Size(56, 48);
             button12.TabIndex = 11;
             button12.Text = "*";
             button12.UseVisualStyleBackColor = false;
@@ -318,12 +292,12 @@
             button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button13.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button13.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button13.ForeColor = System.Drawing.SystemColors.ButtonFace;
             button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button13.Location = new System.Drawing.Point(3, 67);
+            button13.Location = new System.Drawing.Point(3, 57);
             button13.Name = "button13";
-            button13.Size = new System.Drawing.Size(68, 58);
+            button13.Size = new System.Drawing.Size(56, 48);
             button13.TabIndex = 12;
             button13.Text = "-";
             button13.UseVisualStyleBackColor = false;
@@ -336,12 +310,12 @@
             button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button14.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button14.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button14.ForeColor = System.Drawing.SystemColors.ButtonFace;
             button14.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button14.Location = new System.Drawing.Point(3, 131);
+            button14.Location = new System.Drawing.Point(3, 111);
             button14.Name = "button14";
-            button14.Size = new System.Drawing.Size(68, 58);
+            button14.Size = new System.Drawing.Size(56, 48);
             button14.TabIndex = 13;
             button14.Text = "+";
             button14.UseVisualStyleBackColor = false;
@@ -354,26 +328,15 @@
             button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button15.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button15.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button15.ForeColor = System.Drawing.SystemColors.ButtonFace;
             button15.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button15.Location = new System.Drawing.Point(3, 195);
+            button15.Location = new System.Drawing.Point(3, 165);
             button15.Name = "button15";
-            button15.Size = new System.Drawing.Size(68, 58);
+            button15.Size = new System.Drawing.Size(56, 48);
             button15.TabIndex = 14;
             button15.Text = "=";
             button15.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(button16);
-            this.flowLayoutPanel3.Controls.Add(button17);
-            this.flowLayoutPanel3.Controls.Add(button18);
-            this.flowLayoutPanel3.Controls.Add(button19);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(8, 135);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(303, 64);
-            this.flowLayoutPanel3.TabIndex = 2;
             // 
             // button16
             // 
@@ -385,10 +348,9 @@
             button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button16.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button16.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button16.Location = new System.Drawing.Point(3, 3);
+            button16.Location = new System.Drawing.Point(68, 3);
             button16.Name = "button16";
-            button16.Size = new System.Drawing.Size(68, 58);
+            button16.Size = new System.Drawing.Size(59, 43);
             button16.TabIndex = 11;
             button16.Text = "C";
             button16.UseVisualStyleBackColor = false;
@@ -403,10 +365,9 @@
             button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             button17.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button17.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button17.Location = new System.Drawing.Point(77, 3);
+            button17.Location = new System.Drawing.Point(133, 3);
             button17.Name = "button17";
-            button17.Size = new System.Drawing.Size(68, 58);
+            button17.Size = new System.Drawing.Size(59, 43);
             button17.TabIndex = 12;
             button17.Text = "CE";
             button17.UseVisualStyleBackColor = false;
@@ -419,12 +380,11 @@
             button18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             button18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button18.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button18.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button18.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button18.Location = new System.Drawing.Point(151, 3);
+            button18.Location = new System.Drawing.Point(3, 3);
             button18.Name = "button18";
-            button18.Size = new System.Drawing.Size(68, 58);
+            button18.Size = new System.Drawing.Size(59, 43);
             button18.TabIndex = 13;
             button18.Text = "%";
             button18.UseVisualStyleBackColor = false;
@@ -437,15 +397,85 @@
             button19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
             button19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button19.Font = new System.Drawing.Font("MS Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button19.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             button19.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button19.Location = new System.Drawing.Point(225, 3);
+            button19.Location = new System.Drawing.Point(198, 3);
             button19.Name = "button19";
-            button19.Size = new System.Drawing.Size(68, 58);
+            button19.Size = new System.Drawing.Size(59, 43);
             button19.TabIndex = 14;
             button19.Text = "/";
             button19.UseVisualStyleBackColor = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(button7);
+            this.flowLayoutPanel1.Controls.Add(button8);
+            this.flowLayoutPanel1.Controls.Add(button9);
+            this.flowLayoutPanel1.Controls.Add(button4);
+            this.flowLayoutPanel1.Controls.Add(button5);
+            this.flowLayoutPanel1.Controls.Add(button6);
+            this.flowLayoutPanel1.Controls.Add(button1);
+            this.flowLayoutPanel1.Controls.Add(button2);
+            this.flowLayoutPanel1.Controls.Add(button3);
+            this.flowLayoutPanel1.Controls.Add(button20);
+            this.flowLayoutPanel1.Controls.Add(button10);
+            this.flowLayoutPanel1.Controls.Add(button11);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 162);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 221);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(button12);
+            this.flowLayoutPanel2.Controls.Add(button13);
+            this.flowLayoutPanel2.Controls.Add(button14);
+            this.flowLayoutPanel2.Controls.Add(button15);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(207, 162);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 221);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(button18);
+            this.flowLayoutPanel3.Controls.Add(button16);
+            this.flowLayoutPanel3.Controls.Add(button17);
+            this.flowLayoutPanel3.Controls.Add(button19);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(7, 103);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(265, 53);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Info;
+            this.textBox1.Location = new System.Drawing.Point(10, 28);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(256, 56);
+            this.textBox1.TabIndex = 3;
+            // 
+            // button20
+            // 
+            button20.BackColor = System.Drawing.Color.Transparent;
+            button20.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            button20.FlatAppearance.BorderSize = 0;
+            button20.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            button20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button20.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button20.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            button20.Location = new System.Drawing.Point(3, 162);
+            button20.Name = "button20";
+            button20.Size = new System.Drawing.Size(57, 47);
+            button20.TabIndex = 11;
+            button20.Text = "+/-";
+            button20.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -453,7 +483,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(322, 477);
+            this.ClientSize = new System.Drawing.Size(284, 391);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -465,6 +496,7 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -473,6 +505,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
