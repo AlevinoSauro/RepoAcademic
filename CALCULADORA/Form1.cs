@@ -16,7 +16,10 @@ namespace CALCULADORA
         {
             InitializeComponent();
         }
-        float num1;
+        
+        double acumula = 0;
+        string operacao = "";
+        
 
         private void button16_Click(object sender, EventArgs e)
         {
@@ -30,55 +33,54 @@ namespace CALCULADORA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 1;
+            telinha.Text += 1;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 2;
+            telinha.Text += 2;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 3;
+            telinha.Text += 3;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 4;
+            telinha.Text += 4;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 5;
+            telinha.Text += 5;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 6;
+            telinha.Text += 6;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 7;
+            telinha.Text += 7;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 8;
+            telinha.Text += 8;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            txtBox.Text = txtBox.Text + 9;
+            telinha.Text += 9;
         }
 
         private void clearEX_Click(object sender, EventArgs e)
         {
-            if (num1 == 0 && txtBox.TextLength > 0)
-            { num1 = 0; txtBox.Clear(); }
-            else if (num1 > 0 && txtBox.TextLength > 0)
-            { txtBox.Clear(); }
+            acumula = 0;
+            telinha.Text = "";
         }
 
         private void Calc_Load(object sender, EventArgs e)
@@ -96,7 +98,106 @@ namespace CALCULADORA
 
         private void igual_Click(object sender, EventArgs e)
         {
-
+            if (operacao == "+")
+            {
+                acumula += double.Parse(telinha.Text);
+                telinha.Text = acumula.ToString();
+            }
+            else if (operacao == "-")
+            {
+                acumula -= double.Parse(telinha.Text);
+                telinha.Text = acumula.ToString();
+            }
+            else if (operacao == "*")
+            {
+                acumula *= double.Parse(telinha.Text);
+                telinha.Text = acumula.ToString();
+            }
+            else if (operacao == "/")
+            {
+                if (double.Parse(telinha.Text) != 0)
+                {
+                    acumula /= double.Parse(telinha.Text);
+                    telinha.Text = acumula.ToString();
+                }
+                else
+                {
+                    telinha.Text = "Dividindo por zero";
+                }
+            }
         }
+
+        private void adicao_Click(object sender, EventArgs e)
+        {
+            if (operacao == "*" || operacao == "-" || operacao == "/")
+            {
+                operacao = "+";
+            }
+            else
+            {
+                acumula += double.Parse(telinha.Text);
+                telinha.Text = "+";
+                operacao = "+";
+            }
+        }
+
+        private void virgula_Click(object sender, EventArgs e)
+        {
+            telinha.Text += ",";
+        }
+
+        private void button0_Click(object sender, EventArgs e)
+        {
+            telinha.Text += "0";
+        }
+
+        private void divisao_Click(object sender, EventArgs e)
+        {
+            if (operacao == "*" || operacao == "+" || operacao == "-")
+            {
+                operacao = "/";
+            }
+            else
+            {
+                acumula = double.Parse(telinha.Text);
+                telinha.Text = "/";
+                operacao = "/";
+            }
+        }
+
+        private void multiplicacao_Click(object sender, EventArgs e)
+        {
+            if (operacao == "-" || operacao == "+" || operacao == "/")
+            {
+                operacao = "*";
+            }
+            else
+            {
+                acumula = double.Parse(telinha.Text);
+                telinha.Text = "*";
+                operacao = "*";
+            }
+        }
+
+        private void subtracao_Click(object sender, EventArgs e)
+        {
+            if (operacao == "*" || operacao == "+" || operacao == "/")
+            {
+                operacao = "-";
+            }
+            else
+            {
+                acumula = double.Parse(telinha.Text);
+                telinha.Text = "-";
+                operacao = "-";
+            }
+        }
+
+        private void MaisMenos_Click(object sender, EventArgs e)
+        {
+            double x = double.Parse(telinha.Text) * (-1);
+            telinha.Text = x.ToString();
+        }
+
     }
 }
