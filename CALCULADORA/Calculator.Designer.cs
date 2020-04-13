@@ -46,6 +46,7 @@
             System.Windows.Forms.Button MaisMenos;
             System.Windows.Forms.Button clearEX;
             System.Windows.Forms.Button divisao;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calc));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.telinha = new System.Windows.Forms.TextBox();
@@ -365,6 +366,42 @@
             MaisMenos.UseVisualStyleBackColor = false;
             MaisMenos.Click += new System.EventHandler(this.MaisMenos_Click);
             // 
+            // clearEX
+            // 
+            clearEX.BackColor = System.Drawing.Color.Transparent;
+            clearEX.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            clearEX.FlatAppearance.BorderSize = 0;
+            clearEX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            clearEX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            clearEX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            clearEX.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            clearEX.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            clearEX.Location = new System.Drawing.Point(5, 90);
+            clearEX.Name = "clearEX";
+            clearEX.Size = new System.Drawing.Size(59, 43);
+            clearEX.TabIndex = 12;
+            clearEX.Text = "CE";
+            clearEX.UseVisualStyleBackColor = false;
+            clearEX.Click += new System.EventHandler(this.clearEX_Click);
+            // 
+            // divisao
+            // 
+            divisao.BackColor = System.Drawing.Color.Transparent;
+            divisao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            divisao.FlatAppearance.BorderSize = 0;
+            divisao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            divisao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            divisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            divisao.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            divisao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            divisao.Location = new System.Drawing.Point(3, 3);
+            divisao.Name = "divisao";
+            divisao.Size = new System.Drawing.Size(59, 43);
+            divisao.TabIndex = 14;
+            divisao.Text = "/";
+            divisao.UseVisualStyleBackColor = false;
+            divisao.Click += new System.EventHandler(this.divisao_Click);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(button7);
@@ -412,42 +449,6 @@
             this.telinha.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.telinha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBox_KeyPress);
             // 
-            // clearEX
-            // 
-            clearEX.BackColor = System.Drawing.Color.Transparent;
-            clearEX.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            clearEX.FlatAppearance.BorderSize = 0;
-            clearEX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            clearEX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            clearEX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            clearEX.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            clearEX.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            clearEX.Location = new System.Drawing.Point(5, 90);
-            clearEX.Name = "clearEX";
-            clearEX.Size = new System.Drawing.Size(59, 43);
-            clearEX.TabIndex = 12;
-            clearEX.Text = "CE";
-            clearEX.UseVisualStyleBackColor = false;
-            clearEX.Click += new System.EventHandler(this.clearEX_Click);
-            // 
-            // divisao
-            // 
-            divisao.BackColor = System.Drawing.Color.Transparent;
-            divisao.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            divisao.FlatAppearance.BorderSize = 0;
-            divisao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            divisao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            divisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            divisao.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            divisao.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            divisao.Location = new System.Drawing.Point(3, 3);
-            divisao.Name = "divisao";
-            divisao.Size = new System.Drawing.Size(59, 43);
-            divisao.TabIndex = 14;
-            divisao.Text = "/";
-            divisao.UseVisualStyleBackColor = false;
-            divisao.Click += new System.EventHandler(this.divisao_Click);
-            // 
             // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -460,6 +461,7 @@
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calc";
             this.Opacity = 0.9D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
