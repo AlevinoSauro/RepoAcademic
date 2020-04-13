@@ -43,13 +43,11 @@
             System.Windows.Forms.Button subtracao;
             System.Windows.Forms.Button adicao;
             System.Windows.Forms.Button igual;
-            System.Windows.Forms.Button clearEX;
-            System.Windows.Forms.Button porcentagem;
-            System.Windows.Forms.Button divisao;
             System.Windows.Forms.Button MaisMenos;
+            System.Windows.Forms.Button clearEX;
+            System.Windows.Forms.Button divisao;
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.telinha = new System.Windows.Forms.TextBox();
             button1 = new System.Windows.Forms.Button();
             button2 = new System.Windows.Forms.Button();
@@ -66,13 +64,11 @@
             subtracao = new System.Windows.Forms.Button();
             adicao = new System.Windows.Forms.Button();
             igual = new System.Windows.Forms.Button();
-            clearEX = new System.Windows.Forms.Button();
-            porcentagem = new System.Windows.Forms.Button();
-            divisao = new System.Windows.Forms.Button();
             MaisMenos = new System.Windows.Forms.Button();
+            clearEX = new System.Windows.Forms.Button();
+            divisao = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -286,7 +282,7 @@
             multiplicacao.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             multiplicacao.ForeColor = System.Drawing.SystemColors.ButtonFace;
             multiplicacao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            multiplicacao.Location = new System.Drawing.Point(3, 3);
+            multiplicacao.Location = new System.Drawing.Point(3, 52);
             multiplicacao.Name = "multiplicacao";
             multiplicacao.Size = new System.Drawing.Size(56, 48);
             multiplicacao.TabIndex = 11;
@@ -305,7 +301,7 @@
             subtracao.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             subtracao.ForeColor = System.Drawing.SystemColors.ButtonFace;
             subtracao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            subtracao.Location = new System.Drawing.Point(3, 57);
+            subtracao.Location = new System.Drawing.Point(3, 106);
             subtracao.Name = "subtracao";
             subtracao.Size = new System.Drawing.Size(56, 48);
             subtracao.TabIndex = 12;
@@ -324,7 +320,7 @@
             adicao.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             adicao.ForeColor = System.Drawing.SystemColors.ButtonFace;
             adicao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            adicao.Location = new System.Drawing.Point(3, 111);
+            adicao.Location = new System.Drawing.Point(3, 160);
             adicao.Name = "adicao";
             adicao.Size = new System.Drawing.Size(56, 48);
             adicao.TabIndex = 13;
@@ -343,66 +339,13 @@
             igual.Font = new System.Drawing.Font("MS Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             igual.ForeColor = System.Drawing.SystemColors.ButtonFace;
             igual.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            igual.Location = new System.Drawing.Point(3, 165);
+            igual.Location = new System.Drawing.Point(3, 214);
             igual.Name = "igual";
             igual.Size = new System.Drawing.Size(56, 48);
             igual.TabIndex = 14;
             igual.Text = "=";
             igual.UseVisualStyleBackColor = false;
             igual.Click += new System.EventHandler(this.igual_Click);
-            // 
-            // clearEX
-            // 
-            clearEX.BackColor = System.Drawing.Color.Transparent;
-            clearEX.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            clearEX.FlatAppearance.BorderSize = 0;
-            clearEX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            clearEX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            clearEX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            clearEX.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            clearEX.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            clearEX.Location = new System.Drawing.Point(68, 3);
-            clearEX.Name = "clearEX";
-            clearEX.Size = new System.Drawing.Size(59, 43);
-            clearEX.TabIndex = 12;
-            clearEX.Text = "CE";
-            clearEX.UseVisualStyleBackColor = false;
-            clearEX.Click += new System.EventHandler(this.clearEX_Click);
-            // 
-            // porcentagem
-            // 
-            porcentagem.BackColor = System.Drawing.Color.Transparent;
-            porcentagem.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            porcentagem.FlatAppearance.BorderSize = 0;
-            porcentagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            porcentagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            porcentagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            porcentagem.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            porcentagem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            porcentagem.Location = new System.Drawing.Point(3, 3);
-            porcentagem.Name = "porcentagem";
-            porcentagem.Size = new System.Drawing.Size(59, 43);
-            porcentagem.TabIndex = 13;
-            porcentagem.Text = "%";
-            porcentagem.UseVisualStyleBackColor = false;
-            // 
-            // divisao
-            // 
-            divisao.BackColor = System.Drawing.Color.Transparent;
-            divisao.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            divisao.FlatAppearance.BorderSize = 0;
-            divisao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
-            divisao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            divisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            divisao.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            divisao.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            divisao.Location = new System.Drawing.Point(133, 3);
-            divisao.Name = "divisao";
-            divisao.Size = new System.Drawing.Size(59, 43);
-            divisao.TabIndex = 14;
-            divisao.Text = "/";
-            divisao.UseVisualStyleBackColor = false;
-            divisao.Click += new System.EventHandler(this.divisao_Click);
             // 
             // MaisMenos
             // 
@@ -436,31 +379,22 @@
             this.flowLayoutPanel1.Controls.Add(MaisMenos);
             this.flowLayoutPanel1.Controls.Add(button0);
             this.flowLayoutPanel1.Controls.Add(virgula);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 203);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 139);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 215);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.Controls.Add(divisao);
             this.flowLayoutPanel2.Controls.Add(multiplicacao);
             this.flowLayoutPanel2.Controls.Add(subtracao);
             this.flowLayoutPanel2.Controls.Add(adicao);
             this.flowLayoutPanel2.Controls.Add(igual);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(199, 203);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(202, 90);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 215);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 264);
             this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(porcentagem);
-            this.flowLayoutPanel3.Controls.Add(clearEX);
-            this.flowLayoutPanel3.Controls.Add(divisao);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(1, 147);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(263, 53);
-            this.flowLayoutPanel3.TabIndex = 2;
             // 
             // telinha
             // 
@@ -468,7 +402,7 @@
             this.telinha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.telinha.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telinha.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.telinha.Location = new System.Drawing.Point(6, 24);
+            this.telinha.Location = new System.Drawing.Point(7, 24);
             this.telinha.MaxLength = 64;
             this.telinha.Multiline = true;
             this.telinha.Name = "telinha";
@@ -476,8 +410,43 @@
             this.telinha.Size = new System.Drawing.Size(254, 50);
             this.telinha.TabIndex = 4;
             this.telinha.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.telinha.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
             this.telinha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBox_KeyPress);
+            // 
+            // clearEX
+            // 
+            clearEX.BackColor = System.Drawing.Color.Transparent;
+            clearEX.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            clearEX.FlatAppearance.BorderSize = 0;
+            clearEX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            clearEX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            clearEX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            clearEX.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            clearEX.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            clearEX.Location = new System.Drawing.Point(5, 90);
+            clearEX.Name = "clearEX";
+            clearEX.Size = new System.Drawing.Size(59, 43);
+            clearEX.TabIndex = 12;
+            clearEX.Text = "CE";
+            clearEX.UseVisualStyleBackColor = false;
+            clearEX.Click += new System.EventHandler(this.clearEX_Click);
+            // 
+            // divisao
+            // 
+            divisao.BackColor = System.Drawing.Color.Transparent;
+            divisao.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            divisao.FlatAppearance.BorderSize = 0;
+            divisao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray;
+            divisao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            divisao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            divisao.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            divisao.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            divisao.Location = new System.Drawing.Point(3, 3);
+            divisao.Name = "divisao";
+            divisao.Size = new System.Drawing.Size(59, 43);
+            divisao.TabIndex = 14;
+            divisao.Text = "/";
+            divisao.UseVisualStyleBackColor = false;
+            divisao.Click += new System.EventHandler(this.divisao_Click);
             // 
             // Calc
             // 
@@ -485,9 +454,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(353, 418);
+            this.ClientSize = new System.Drawing.Size(273, 359);
+            this.Controls.Add(clearEX);
             this.Controls.Add(this.telinha);
-            this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -495,10 +464,8 @@
             this.Opacity = 0.9D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Calculadora";
-            this.Load += new System.EventHandler(this.Calc_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -508,7 +475,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.TextBox telinha;
     }
 }

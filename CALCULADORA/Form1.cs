@@ -20,17 +20,6 @@ namespace CALCULADORA
         double acumula = 0;
         string operacao = "";
         
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-                
-        }
-
-        private void txtBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             telinha.Text += 1;
@@ -82,12 +71,6 @@ namespace CALCULADORA
             acumula = 0;
             telinha.Text = "";
         }
-
-        private void Calc_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
@@ -136,7 +119,7 @@ namespace CALCULADORA
             else
             {
                 acumula += double.Parse(telinha.Text);
-                telinha.Text = "+";
+                telinha.Text = "";
                 operacao = "+";
             }
         }
@@ -159,8 +142,8 @@ namespace CALCULADORA
             }
             else
             {
-                acumula = double.Parse(telinha.Text);
-                telinha.Text = "/";
+                acumula /= double.Parse(telinha.Text);
+                telinha.Text = "";
                 operacao = "/";
             }
         }
@@ -173,8 +156,8 @@ namespace CALCULADORA
             }
             else
             {
-                acumula = double.Parse(telinha.Text);
-                telinha.Text = "*";
+                acumula *= double.Parse(telinha.Text);
+                telinha.Text = "";
                 operacao = "*";
             }
         }
@@ -187,8 +170,8 @@ namespace CALCULADORA
             }
             else
             {
-                acumula = double.Parse(telinha.Text);
-                telinha.Text = "-";
+                acumula -= double.Parse(telinha.Text);
+                telinha.Text = "";
                 operacao = "-";
             }
         }
