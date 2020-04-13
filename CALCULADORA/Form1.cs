@@ -80,5 +80,23 @@ namespace CALCULADORA
             else if (num1 > 0 && txtBox.TextLength > 0)
             { txtBox.Clear(); }
         }
+
+        private void Calc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void igual_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

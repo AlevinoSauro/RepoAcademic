@@ -346,6 +346,7 @@
             igual.TabIndex = 14;
             igual.Text = "=";
             igual.UseVisualStyleBackColor = false;
+            igual.Click += new System.EventHandler(this.igual_Click);
             // 
             // clear
             // 
@@ -417,63 +418,6 @@
             divisao.Text = "/";
             divisao.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(button7);
-            this.flowLayoutPanel1.Controls.Add(button8);
-            this.flowLayoutPanel1.Controls.Add(button9);
-            this.flowLayoutPanel1.Controls.Add(button4);
-            this.flowLayoutPanel1.Controls.Add(button5);
-            this.flowLayoutPanel1.Controls.Add(button6);
-            this.flowLayoutPanel1.Controls.Add(button1);
-            this.flowLayoutPanel1.Controls.Add(button2);
-            this.flowLayoutPanel1.Controls.Add(button3);
-            this.flowLayoutPanel1.Controls.Add(MaisMenos);
-            this.flowLayoutPanel1.Controls.Add(button0);
-            this.flowLayoutPanel1.Controls.Add(virgula);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 158);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 215);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(multiplicacao);
-            this.flowLayoutPanel2.Controls.Add(subtracao);
-            this.flowLayoutPanel2.Controls.Add(adicao);
-            this.flowLayoutPanel2.Controls.Add(igual);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(205, 158);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 215);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(porcentagem);
-            this.flowLayoutPanel3.Controls.Add(clear);
-            this.flowLayoutPanel3.Controls.Add(clearEX);
-            this.flowLayoutPanel3.Controls.Add(divisao);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(7, 103);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(263, 53);
-            this.flowLayoutPanel3.TabIndex = 2;
-            // 
-            // txtBox
-            // 
-            this.txtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.txtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBox.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.txtBox.Location = new System.Drawing.Point(10, 31);
-            this.txtBox.MaxLength = 64;
-            this.txtBox.Multiline = true;
-            this.txtBox.Name = "txtBox";
-            this.txtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtBox.Size = new System.Drawing.Size(254, 50);
-            this.txtBox.TabIndex = 4;
-            this.txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtBox.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
-            // 
             // MaisMenos
             // 
             MaisMenos.BackColor = System.Drawing.Color.Transparent;
@@ -491,13 +435,71 @@
             MaisMenos.Text = "+/-";
             MaisMenos.UseVisualStyleBackColor = false;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(button7);
+            this.flowLayoutPanel1.Controls.Add(button8);
+            this.flowLayoutPanel1.Controls.Add(button9);
+            this.flowLayoutPanel1.Controls.Add(button4);
+            this.flowLayoutPanel1.Controls.Add(button5);
+            this.flowLayoutPanel1.Controls.Add(button6);
+            this.flowLayoutPanel1.Controls.Add(button1);
+            this.flowLayoutPanel1.Controls.Add(button2);
+            this.flowLayoutPanel1.Controls.Add(button3);
+            this.flowLayoutPanel1.Controls.Add(MaisMenos);
+            this.flowLayoutPanel1.Controls.Add(button0);
+            this.flowLayoutPanel1.Controls.Add(virgula);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 146);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 215);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(multiplicacao);
+            this.flowLayoutPanel2.Controls.Add(subtracao);
+            this.flowLayoutPanel2.Controls.Add(adicao);
+            this.flowLayoutPanel2.Controls.Add(igual);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(201, 146);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 215);
+            this.flowLayoutPanel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(porcentagem);
+            this.flowLayoutPanel3.Controls.Add(clear);
+            this.flowLayoutPanel3.Controls.Add(clearEX);
+            this.flowLayoutPanel3.Controls.Add(divisao);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 91);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(263, 53);
+            this.flowLayoutPanel3.TabIndex = 2;
+            // 
+            // txtBox
+            // 
+            this.txtBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.txtBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBox.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.txtBox.Location = new System.Drawing.Point(6, 24);
+            this.txtBox.MaxLength = 64;
+            this.txtBox.Multiline = true;
+            this.txtBox.Name = "txtBox";
+            this.txtBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtBox.Size = new System.Drawing.Size(254, 50);
+            this.txtBox.TabIndex = 4;
+            this.txtBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtBox.TextChanged += new System.EventHandler(this.txtBox_TextChanged);
+            this.txtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBox_KeyPress);
+            // 
             // Calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(278, 379);
+            this.ClientSize = new System.Drawing.Size(272, 367);
             this.Controls.Add(this.txtBox);
             this.Controls.Add(this.flowLayoutPanel3);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -507,6 +509,7 @@
             this.Opacity = 0.9D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Calc_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel3.ResumeLayout(false);
