@@ -376,7 +376,7 @@
             clearEX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             clearEX.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             clearEX.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            clearEX.Location = new System.Drawing.Point(5, 90);
+            clearEX.Location = new System.Drawing.Point(5, 69);
             clearEX.Name = "clearEX";
             clearEX.Size = new System.Drawing.Size(59, 43);
             clearEX.TabIndex = 12;
@@ -416,7 +416,7 @@
             this.flowLayoutPanel1.Controls.Add(MaisMenos);
             this.flowLayoutPanel1.Controls.Add(button0);
             this.flowLayoutPanel1.Controls.Add(virgula);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 139);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 115);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 215);
             this.flowLayoutPanel1.TabIndex = 0;
@@ -428,7 +428,7 @@
             this.flowLayoutPanel2.Controls.Add(subtracao);
             this.flowLayoutPanel2.Controls.Add(adicao);
             this.flowLayoutPanel2.Controls.Add(igual);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(202, 90);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(196, 66);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(65, 264);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -439,7 +439,7 @@
             this.telinha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.telinha.Font = new System.Drawing.Font("MS Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telinha.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.telinha.Location = new System.Drawing.Point(7, 24);
+            this.telinha.Location = new System.Drawing.Point(5, 12);
             this.telinha.MaxLength = 64;
             this.telinha.Multiline = true;
             this.telinha.Name = "telinha";
@@ -454,8 +454,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(273, 359);
+            this.ClientSize = new System.Drawing.Size(263, 332);
             this.Controls.Add(clearEX);
             this.Controls.Add(this.telinha);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -464,7 +465,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calc";
             this.Opacity = 0.9D;
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Calculadora";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
