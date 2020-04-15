@@ -129,7 +129,7 @@ namespace CALCULADORA
             else
             {
                 acumula = double.Parse(telinha.Text);
-                telinha.Text = "";
+                telinha.Text = "+";
                 operacao = "+";
             }
         }
@@ -143,7 +143,7 @@ namespace CALCULADORA
             else
             {
                 acumula = double.Parse(telinha.Text);
-                telinha.Text = "";
+                telinha.Text = "/";
                 operacao = "/";
             }
         }
@@ -157,7 +157,7 @@ namespace CALCULADORA
             else
             {
                 acumula = double.Parse(telinha.Text);
-                telinha.Text = "";
+                telinha.Text = "*";
                 operacao = "*";
             }
         }
@@ -171,7 +171,7 @@ namespace CALCULADORA
             else
             {
                 acumula = double.Parse(telinha.Text);
-                telinha.Text = "";
+                telinha.Text = "-";
                 operacao = "-";
             }
         }
@@ -181,6 +181,5 @@ namespace CALCULADORA
             double x = double.Parse(telinha.Text) * (-1);
             telinha.Text = x.ToString();
         }
-
     }
 }

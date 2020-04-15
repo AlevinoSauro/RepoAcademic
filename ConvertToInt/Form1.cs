@@ -16,5 +16,12 @@ namespace ConvertToInt
         {
             InitializeComponent();
         }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            decimal num = decimal.Parse(txtBox.Text);
+            Convert.ToInt32(num);
+            visor.Text = num.ToString();
+        }
     }
 }
