@@ -48,8 +48,20 @@ namespace IMC
             varPes = Convert.ToDouble(txtPes.Text);
             calculo = varPes / (varAlt*varAlt);
 
-            MessageBox.Show("O seu IMC é " + calculo.ToString() , "Resultado");
-
+            if (calculo > 40)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você é um obeso mórbido, por favor consulte um medico logo.", "Resultado"); }
+            else if (calculo > 35)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você está com uma obesidade severa, por favor se tratar.", "Resultado"); }
+            else if (calculo > 30)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você está obeso, saia do computador.", "Resultado"); }
+            else if (calculo > 25)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você está acima do peso, pare de comer besteira.", "Resultado"); }
+            else if (calculo > 18.50)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você está com o peso normal, continue assim.", "Resultado"); }
+            else if (calculo > 17)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você esta abaixo do peso, coma mais ok.", "Resultado"); }
+            else if (calculo < 17)
+            { MessageBox.Show("O seu IMC é " + calculo.ToString("0.00") + " Você está bem magro, vão achar que você usa droga, melhor se cuidar.", "Resultado"); }
         }
 
     }
