@@ -19,7 +19,12 @@ namespace CALCULADORA
         
         double acumula = 0;
         string operacao = "";
-        
+
+        private void button0_Click(object sender, EventArgs e)
+        {
+            telinha.Text += 0;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             telinha.Text += 1;
@@ -64,6 +69,11 @@ namespace CALCULADORA
         private void button9_Click(object sender, EventArgs e)
         {
             telinha.Text += 9;
+        }
+
+        private void virgula_Click(object sender, EventArgs e)
+        {
+            telinha.Text += ",";
         }
 
         private void clearEX_Click(object sender, EventArgs e)
@@ -122,16 +132,6 @@ namespace CALCULADORA
                 telinha.Text = "";
                 operacao = "+";
             }
-        }
-
-        private void virgula_Click(object sender, EventArgs e)
-        {
-            telinha.Text += ",";
-        }
-
-        private void button0_Click(object sender, EventArgs e)
-        {
-            telinha.Text += "0";
         }
 
         private void divisao_Click(object sender, EventArgs e)
