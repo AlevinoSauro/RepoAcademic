@@ -1,3 +1,3 @@
 # RepoAcademic
 
-# 学校プロジェクトのリポジトリ。
+# Repositório com projetos, solicitados em aula.
