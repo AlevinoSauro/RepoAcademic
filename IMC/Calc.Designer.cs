@@ -49,9 +49,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnCalc = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtAlt = new System.Windows.Forms.TextBox();
-            this.txtPes = new System.Windows.Forms.TextBox();
+            this.txtAlt = new System.Windows.Forms.NumericUpDown();
+            this.txtPes = new System.Windows.Forms.NumericUpDown();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAlt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPes)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -190,7 +192,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 172);
+            this.label1.Location = new System.Drawing.Point(34, 159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 1;
@@ -201,7 +203,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(36, 95);
+            this.label2.Location = new System.Drawing.Point(34, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 16);
             this.label2.TabIndex = 2;
@@ -213,7 +215,7 @@
             this.btnCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalc.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalc.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnCalc.Location = new System.Drawing.Point(39, 261);
+            this.btnCalc.Location = new System.Drawing.Point(37, 248);
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(92, 29);
             this.btnCalc.TabIndex = 5;
@@ -234,17 +236,35 @@
             // 
             // txtAlt
             // 
-            this.txtAlt.Location = new System.Drawing.Point(52, 114);
+            this.txtAlt.DecimalPlaces = 2;
+            this.txtAlt.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.txtAlt.Location = new System.Drawing.Point(48, 101);
+            this.txtAlt.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            131072});
             this.txtAlt.Name = "txtAlt";
             this.txtAlt.Size = new System.Drawing.Size(92, 20);
-            this.txtAlt.TabIndex = 21;
+            this.txtAlt.TabIndex = 7;
             // 
             // txtPes
             // 
-            this.txtPes.Location = new System.Drawing.Point(52, 191);
+            this.txtPes.DecimalPlaces = 1;
+            this.txtPes.Location = new System.Drawing.Point(48, 178);
+            this.txtPes.Maximum = new decimal(new int[] {
+            30000,
+            0,
+            0,
+            131072});
             this.txtPes.Name = "txtPes";
             this.txtPes.Size = new System.Drawing.Size(92, 20);
-            this.txtPes.TabIndex = 22;
+            this.txtPes.TabIndex = 8;
+            this.txtPes.ThousandsSeparator = true;
             // 
             // Calculator
             // 
@@ -252,7 +272,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(347, 311);
+            this.ClientSize = new System.Drawing.Size(347, 298);
             this.Controls.Add(this.txtPes);
             this.Controls.Add(this.txtAlt);
             this.Controls.Add(this.label3);
@@ -267,11 +287,14 @@
             this.MinimizeBox = false;
             this.Name = "Calculator";
             this.Opacity = 0.95D;
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IMC - Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAlt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,8 +322,8 @@
         private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem portuguesPTBRToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.TextBox txtAlt;
-        private System.Windows.Forms.TextBox txtPes;
+        private System.Windows.Forms.NumericUpDown txtAlt;
+        private System.Windows.Forms.NumericUpDown txtPes;
     }
 }
 
